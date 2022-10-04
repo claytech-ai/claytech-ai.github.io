@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Inter";
+  src: url("Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: Inter, serif;
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.panel .content {
+  width: 60%;
+  min-width: 400px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.panel .box {
+  width: 30%;
+  min-width: 400px;
+  padding: 30px;
+  margin: 20px;
+}
+@media (min-width: 600px) {
+  .panel.left .content {
+    margin-left: 200px;
+  }
+}
+.panel.right {
+  justify-content: flex-end;
+}
+@media (min-width: 600px) {
+  .panel.right .content {
+    margin-right: 200px;
+  }
+}
+.panel.center {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.panel.center .content {
+  text-align: center;
+}
+.panel.no-top-spacing {
+  padding-top: 0;
+}
+.panel.no-top-spacing .content {
+  padding-top: 0;
+}
+.panel.no-bottom-spacing {
+  padding-bottom: 0;
+}
+.panel.no-bottom-spacing .content {
+  padding-bottom: 0;
+}
+
+.spacer-down {
+  width: 100%;
+  height: 30px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.spacer-up {
+  width: 100%;
+  height: 30px;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+}
+
+.spacer-lb {
+  width: 100%;
+  height: 30px;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+.condensed {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+.black h1, .black .logo {
+  color: #29F1C3;
+}
+.black .logo {
+  font-size: 30px;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+.white h1, .white .logo {
+  color: #29F1C3;
+}
+
+a.button, a.button:link, a.button:visited {
+  background-color: #29F1C3;
+  padding: 6px 14px;
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+}
+a.button.large, a.button:link.large, a.button:visited.large {
+  font-size: 24px;
+  padding: 8px 16px;
+}
+a.button:hover {
+  background-color: white;
+}
+
+.left-nav, .right-nav {
+  width: 200px;
+}
+
+.right-nav {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */
