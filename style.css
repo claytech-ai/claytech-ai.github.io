@@ -29,6 +29,13 @@ body {
   padding: 30px;
   margin: 20px;
 }
+.panel .box.small {
+  width: 300px;
+  min-width: 300px;
+}
+.panel .box.center {
+  text-align: center;
+}
 @media (min-width: 600px) {
   .panel.left .content {
     margin-left: 200px;
@@ -133,6 +140,12 @@ a.button:hover {
 
 .right-nav {
   text-align: right;
+}
+
+img.profile {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
